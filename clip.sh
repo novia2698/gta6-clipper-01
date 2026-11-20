@@ -25,7 +25,7 @@
 # semi-transparent black box, inside the vertical safe area.
 
 set -eu
-SRC="${SRC:-../gta6-clipper-01-footage/trailer2.mp4}"
+SRC="${SRC:-../../gta6-clipper-01-footage/trailer2.mp4}"
 OUT="${OUT:-out/gta6-clip-01.mp4}"
 WORK="${WORK:-out/work}"
 FONT="${FONT:-/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf}"
@@ -62,7 +62,10 @@ ffmpeg -y -v error -loop 1 -t "$ENDCARD_LEN" -i "$WORK/freeze-v.png" -ss "$TAIL_
   -movflags +faststart "$WORK/part2.mp4"
 
 # --- join: 12 s + 8 s = 20 s ----------------------------------------------
-printf "file '%s'\nfile '%s'\n" "$WORK/part1.mp4" "$WORK/part2.mp4" > "$WORK/concat.txt"
+# concat demuxer resolves relative paths against the concat file's own
+# directory, so write absolute paths (relative ones broke as
+# out/work/out/work/part1.mp4).
+printf "file '%s'\nfile '%s'\n" "$PWD/$WORK/part1.mp4" "$PWD/$WORK/part2.mp4" > "$WORK/concat.txt"
 ffmpeg -y -v error -f concat -safe 0 -i "$WORK/concat.txt" -c copy -movflags +faststart "$OUT"
 
 # --- thumbnail: the 2:21 motorcycle + plane frame, vertical ----------------
