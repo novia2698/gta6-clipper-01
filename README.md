@@ -2,6 +2,10 @@
 
 [![make.fun bounty](https://img.shields.io/badge/make.fun-bounty-gta6--clipper--01-blue)](https://make.fun/bounty/gta6-clipper-01)
 
+[![make.fun competition](https://make.fun/badge/gta6-clipper-01.svg)](https://make.fun/bounty/gta6-clipper-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-clipper-01)
+[![make.fun rank](https://make.fun/badge/gta6-clipper-01/novia2698/gta6-clipper-01/rank.svg)](https://make.fun/bounty/gta6-clipper-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=gta6-clipper-01)
+[![make.fun reward](https://make.fun/badge/gta6-clipper-01/novia2698/gta6-clipper-01/reward.svg)](https://make.fun/bounty/gta6-clipper-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-clipper-01)
+
 A 20-second vertical cut of the GTA 6 trailer, reframed for YouTube
 Shorts and carrying a short on-screen pitch for make.fun: clips like
 this can be made with AI, and making them can earn money on make.fun.
@@ -56,3 +60,4 @@ npx tsx main.ts
 
 - Bounty: [gta6-clipper-01](https://make.fun/bounty/gta6-clipper-01) — $500 prize pool
 - Play code: `makefun-lute-flint-mandolin`
+- Try make.fun with referral code `bpr1tvsc`: https://make.fun?ref=bpr1tvsc
