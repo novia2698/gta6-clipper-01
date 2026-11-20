@@ -27,14 +27,15 @@ if (!existsSync(sourcePath)) {
 }
 
 // Read the record and sanity-check it before copying: the entry is only
-// valid if it points at a real published video.
+// valid if it points at a real published video. VIDEO.json carries the
+// published Short under the "url" key (entry_link schema).
 const record = JSON.parse(readFileSync(sourcePath, "utf8")) as unknown;
 if (typeof record !== "object" || record === null) {
   fail("VIDEO.json does not contain a JSON object");
 }
-const videoUrl = (record as { video_url?: unknown }).video_url;
+const videoUrl = (record as { url?: unknown }).url;
 if (typeof videoUrl !== "string" || !videoUrl.startsWith("https://")) {
-  fail("VIDEO.json has no usable https video_url");
+  fail("VIDEO.json has no usable https url");
 }
 
 mkdirSync(outputDir, { recursive: true });
