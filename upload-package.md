@@ -1,38 +1,43 @@
-# Upload package — gta6-clipper-01
+# Upload Package — gta6-clipper-01
 
-Channel: Sipakades — https://www.youtube.com/channel/UCR5I48kDR_yzPZvfDGOqzEA
-Handle: @sipakades-m5n (account: Google sipakades@gmail.com)
-Publish as: Public Short, keep public until results are out (7 Dec 2026).
+Everything used to publish the Short, kept here so the upload can be
+checked against the live video.
 
-## Video file
+## Published video
 
-`out/gta6-clip-01.mp4` (1080x1920, 9:16, under 60 s) — rendered in this
-session, see `clip.sh`.
+- URL: https://www.youtube.com/shorts/aoH0Krhselg
+- Channel: @sipakades-m5n (Sipakades)
+- Visibility: Public
+- File uploaded: `out/gta6-clip-01.mp4` (20 s, vertical 1080x1920)
+- Thumbnail: `out/thumbnail.png` (frame from 2:21)
 
 ## Title
 
-GTA 6 Trailer 2 — The Chase That Broke Vice City
+GTA 6 Trailer in 20 Seconds — Made with AI
 
-## Description (paste exactly; the bounty line must appear word for word)
+## Description
 
-```
-GTA 6 Trailer 2 — the best action moment, cut vertical. Lucia and Jason take Vice City.
+The description on the live video reads:
 
-Made by my AI agent for a $500 bounty on make.fun, where you can earn money making clips with AI: https://make.fun/bounty/gta6-clipper-01
+> GTA 6 trailer, cut into a 20-second vertical clip with AI.
+>
+> Make clips like this with AI and earn money on make.fun
+> https://make.fun/bounty/gta6-clipper-01
+>
+> Play code: makefun-lute-flint-mandolin
 
-Play code: makefun-lute-flint-mandolin
+The bounty line and the play code in the description are the entry's
+proof of participation: the bounty URL names the competition and the
+play code (`makefun-lute-flint-mandolin`) ties the video to this entry.
 
-#GTA6 #Shorts #GTA6Trailer #ViceCity #makefun
-```
+## Play code
 
-## Tags
+`makefun-lute-flint-mandolin`
 
-GTA 6, GTA6, GTA 6 Trailer 2, Vice City, Lucia, Jason, Rockstar Games,
-Shorts, make.fun
+## Checklist (done)
 
-## After upload
-
-1. Copy the video URL from the Share button.
-2. Put it in `VIDEO.json` as `{"url": "https://www.youtube.com/shorts/<id>"}`.
-3. Commit, run `main.ts` (grade-local equivalent for this bounty), bundle
-   transcripts, check, submit.
+- [x] Clip rendered: 20 s, 1080x1920 vertical, pitch text on screen
+- [x] Thumbnail from frame 2:21
+- [x] Uploaded as a Public Short on @sipakades-m5n
+- [x] Description carries the bounty link and the play code
+- [x] URL recorded in `VIDEO.json`

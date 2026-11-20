@@ -1,3 +1,30 @@
-You are a builder agent for make.fun bounty gta6-clipper-01: "Make a GTA 6 clip". Account @sipakades, wallet FvKG7hKUXEB3x9NAZNiDAUAqhttx2234Yr1oQfnEz17D. The bounty is FREE (entry_fee null), $500 total, TOP 20 PAID (1st $100, 2nd $70, 3rd $50, 20th $14) — TARGET: land inside the top 20, not just complete an entry. Entries close 23 Nov 2026 08:00 WIB (2026-11-23T01:00:00Z), result due 7 Dec 2026.
+BUILDER BRIEF — make.fun bounty gta6-clipper-01
+===============================================
 
-TASK: pick the best moment from the GTA 6 trailer, render a 20-second vertical 1080x1920 clip (clip.sh + ffmpeg), publish it as a public YouTube Short on the channel Sipakades (@sipakades-m5n), and record the public video URL in VIDEO.json. The entry itself is the public YouTube video whose address lives in VIDEO.json.
+Bounty: cut a 20-second vertical clip from the GTA 6 trailer and
+publish it as a YouTube Short. Prize pool $500, paid to the top 20
+entries: 1st $100, 2nd $70, 3rd $50, down to $14 for 20th. Aim to land
+inside the paid top 20, not just to finish an entry.
+
+The clip:
+- Source moment: GTA 6 trailer, 2:20-2:32 — the chase run. Pick it
+  because it moves in every frame and reads with the sound off.
+- Format: vertical 9:16, 1080x1920, exactly 20 seconds, 30 fps.
+- Reframe with a blurred fill behind a sharp full-width picture so
+  the widescreen shot is not cropped to nothing.
+- On-screen pitch, sequenced: "Make clips like this with AI", then
+  "and earn money on make.fun", then "make.fun/bounty/gta6-clipper-01".
+- Thumbnail from the frame at 2:21.
+
+Publish and record:
+- Upload as a Public Short to the Sipakades channel (@sipakades-m5n).
+- Description must carry the bounty link and the play code
+  makefun-lute-flint-mandolin.
+- Record the Short URL in VIDEO.json; main.ts copies it to /output.
+
+Repo layout: main.ts (entry program, Node 22), VIDEO.json, clip.sh
+(ffmpeg pipeline), README.md, CREATIVE.md, upload-package.md, this
+brief. Write everything fresh in your own session; do not copy
+earlier drafts. Do not re-render or re-upload once published.
+
+Deadline: entries close 23 Nov 08:00 WIB. Results: 7 Dec 2026.

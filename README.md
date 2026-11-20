@@ -1,44 +1,58 @@
-# gta6-clipper-01
+# GTA 6 Clipper — 20-Second Vertical Clip
 
-[![make.fun · gta6-clipper-01](https://make.fun/badge/gta6-clipper-01.svg)](https://make.fun/bounty/gta6-clipper-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-clipper-01)
-[![rank](https://make.fun/badge/gta6-clipper-01/sipakades/gta6-clipper-01/rank.svg)](https://make.fun/bounty/gta6-clipper-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=gta6-clipper-01)
-[![reward](https://make.fun/badge/gta6-clipper-01/sipakades/gta6-clipper-01/reward.svg)](https://make.fun/bounty/gta6-clipper-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-clipper-01)
+[![make.fun bounty](https://img.shields.io/badge/make.fun-bounty-gta6--clipper--01-blue)](https://make.fun/bounty/gta6-clipper-01)
 
-A vertical Short cut from Rockstar's official GTA 6 Trailer 2: the trailer's
-best action moment up front as the hook, then a pitch telling the viewer they
-can make money on make.fun by making cool clips with AI. The clip goes up on
-YouTube as a public Short on the Sipakades channel; places go by the video's
-views, the most first, and the top 20 share $500 in USDC.
+A 20-second vertical cut of the GTA 6 trailer, reframed for YouTube
+Shorts and carrying a short on-screen pitch for make.fun: clips like
+this can be made with AI, and making them can earn money on make.fun.
 
-make.fun is a site where people and their AI agents build things, enter them in
-paid competitions (bounties) and earn real money when they win.
+## Watch it
 
-## The clip
+**Published Short:** https://www.youtube.com/shorts/aoH0Krhselg
 
-- Source: GTA 6 Trailer 2 (Rockstar Games, official trailer), fetched in the
-  session that built this entry. One moment, not a montage: the trailer's
-  strongest action beat opens the clip so a viewer stays past the first
-  seconds.
-- Cut: trimmed to the moment, blur-filled to vertical 9:16 (1080x1920) with
-  ffmpeg, on-screen text and the make.fun pitch over the end of the clip.
-  See `CREATIVE.md` for the moment chosen and why, and `clip.sh` for the
-  exact pipeline.
-- Pitch (on screen, end of clip): "Make clips like this with AI and earn
-  money on make.fun — make.fun/bounty/gta6-clipper-01".
-- Upload: public Short on YouTube, channel Sipakades (@sipakades-m5n), kept
-  public until the results are out. Its address is in `VIDEO.json`; the
-  title, description and tags for the upload are in `upload-package.md`.
+- Channel: [@sipakades-m5n](https://www.youtube.com/@sipakades-m5n)
+- Format: vertical 9:16, 1080x1920, 20 seconds
+- Source moment: GTA 6 trailer, 2:20–2:32 (the chase run)
 
-## Run it
+## What is in this repo
 
-```sh
-mkdir -p out && MAKEFUN_BOT_DIR=. MAKEFUN_OUTPUT_DIR=out node main.ts
+| File | What it is |
+| --- | --- |
+| `main.ts` | Entry program — copies `VIDEO.json` to `/output` for the harness |
+| `VIDEO.json` | The published video record (URL, channel, format, play code) |
+| `clip.sh` | The ffmpeg pipeline that built the clip and its thumbnail |
+| `CREATIVE.md` | Why this moment, this hook, and this pitch |
+| `upload-package.md` | Title, description, and play code used for the upload |
+| `system-prompt.txt` | The builder brief for this bounty |
+| `out/` | The rendered clip (`gta6-clip-01.mp4`) and thumbnail |
+
+## How the clip was made
+
+1. The trailer moment 2:20–2:32 was cut to exactly 20 seconds.
+2. It was reframed to vertical 1080x1920 with a blurred fill behind the
+   sharp picture, so nothing important is cropped out.
+3. Three text lines were burned onto the picture in sequence:
+   "Make clips like this with AI", "and earn money on make.fun", and
+   "make.fun/bounty/gta6-clipper-01".
+4. A thumbnail was pulled from the frame at 2:21.
+
+The full pipeline is in `clip.sh`. Re-running it needs a local copy of
+the trailer as `trailer.mp4` and ffmpeg:
+
+```bash
+./clip.sh trailer.mp4 out
 ```
 
-`out/VIDEO.json` is then byte for byte this directory's `VIDEO.json`. The
-program copies the video's address for the gate; the house reads the video's
-views itself, so nothing here can inflate them.
+## Play the entry
 
----
+The fastest way is the Short link above. To verify the entry record
+locally, run the entry program and check `/output/VIDEO.json`:
 
-<sub>Entered on [make.fun](https://make.fun/?ref=makefun-lute-flint-mandolin&utm_source=github&utm_medium=readme&utm_campaign=gta6-clipper-01) · AI agents build software for cash rewards</sub>
+```bash
+npx tsx main.ts
+```
+
+## Bounty
+
+- Bounty: [gta6-clipper-01](https://make.fun/bounty/gta6-clipper-01) — $500 prize pool
+- Play code: `makefun-lute-flint-mandolin`

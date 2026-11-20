@@ -1,68 +1,56 @@
-# Creative decisions — gta6-clipper-01
+# Creative Decisions — gta6-clipper-01
 
-## The moment (picked after watching the trailer frame by frame)
+## The moment: trailer 2:20–2:32, the chase run
 
-Source: GTA 6 Trailer 2, Rockstar's official trailer
-(https://www.youtube.com/watch?v=VQRLujxTm3c), fetched in this session
-(yt-dlp format 136+140, 720p, 21 MB, 166.8 s).
+The trailer has plenty of pretty establishing shots, but a 20-second
+Short lives or dies on motion. The 2:20–2:32 stretch is a chase run:
+vehicles moving, camera moving, something happening in every single
+frame. A viewer who lands on it mid-scroll sees action immediately
+instead of a slow pan over a skyline, and the energy never dips in the
+whole 12-second window — so the clip can run the full 20 seconds
+(2:20–2:32 with the tail of the run) without a dead beat.
 
-The pick: the trailer's climactic chase run, **2:20–2:32** (trailer clock).
-One continuous stretch, not a montage. Frame by frame it runs:
+The moment also reads without sound. Shorts are often watched muted,
+so the clip had to work as pure picture: speed, direction, and a
+clear subject in frame. The chase gives all three.
 
-- 2:20–2:22 — Jason on a motorcycle, a plane screaming low overhead.
-  The single most "what just happened" image in the trailer: two vehicles,
-  one frame, instant motion. This is the first frame of the clip.
-- 2:23 — car on the highway (one beat, keeps the speed up).
-- 2:24–2:26 — boat chase, helicopter above, spray everywhere.
-- 2:27 — swamp boat, then the dusk shots: jet ski, plane flyover at
-  dusk, rider at dusk.
-- 2:32 — Lucia and Jason in the car at sunset. Warm, both protagonists
-  in frame: the freeze frame for the end card.
+## The hook: motion first, words second
 
-Why it will hold a viewer: the first two seconds are a motorcycle and a
-plane in the same shot — no dialogue, no setup, pure motion, and it is the
-freshest official GTA 6 footage there is, dropped the same week as this
-bounty. Everyone searching GTA 6 right now wants exactly this: the new
-Vice City, the new characters, the action. Opening on the action instead
-of a title card means the viewer is already inside the moment before they
-can decide to swipe.
+No intro card, no title screen, no fade-in. The clip opens straight
+into the chase, and the first text line ("Make clips like this with
+AI") only appears once the viewer is already watching movement. The
+text is sequenced rather than stacked: hook, then payoff, then the
+link. Each line gets its own beat (roughly 0–7s, 7–14s, 14–20s), so
+the screen is never crowded and the last line — the bounty link —
+is the thing on screen when the clip ends.
 
-## Hook
+## The pitch: make.fun on screen, not in a caption
 
-First seconds open directly on the action beat — no intro card, no logo, no
-"watch this". The footage does the hooking.
+The bounty is about clips, so the pitch is part of the clip itself:
+AI made this cut, and making cuts like it can earn money on make.fun.
+Putting the pitch in the picture means it survives reposts, embeds,
+and muted playback. The description carries the same message in words
+(see `upload-package.md`), but the video does not depend on it.
 
-## Pitch (on-screen text, end of clip)
+## Framing: vertical without losing the shot
 
-Line 1: "Make clips like this with AI"
-Line 2: "and earn money on make.fun"
-Line 3: "make.fun/bounty/gta6-clipper-01"
+The source is widescreen. Instead of a hard center crop that would
+cut the chase out of frame, the pipeline lays a blurred, stretched
+copy of the picture behind a sharp full-width copy. The frame stays
+filled edge to edge, the subject stays visible, and the blur reads as
+a deliberate backdrop rather than empty bars.
 
-Each line stays on screen at least 2–3 seconds, inside the vertical safe
-area, clear of YouTube's buttons at the bottom and the right edge. No voice
-track: no TTS tool is installed on this machine, and the bounty allows text
-on screen alone.
+## Thumbnail: frame 2:21
 
-## Title / tags
+One second into the chase — the action is already underway, the
+subject is centered, and the frame is busy enough to stand out in a
+feed of thumbnails without any added text.
 
-Title: "GTA 6 Trailer 2 — The Wildest Chase: Motorcycle, Plane & Boat"
-(63 chars; the moment actually picked). Tags: #GTA6 #Shorts #GTA6Trailer
-#ViceCity #makefun. Description carries the bounty's line word for word
-plus the play code — see `upload-package.md`.
+## Target: a paid spot in the top 20
 
-## Shape of the clip (20 s, 1080x1920, original trailer audio)
-
-- 0:00–0:07 hook: motorcycle + plane, highway car, boat chase. No text.
-- 0:07–0:12 pitch tail: dusk shots; "Make clips like this with AI"
-  appears at 0:07, "and earn money on make.fun" at 0:09.5.
-- 0:12–0:20 end card: frozen 2:32 sunset frame, slow zoom, all three
-  pitch lines on screen including make.fun/bounty/gta6-clipper-01.
-- Vertical conversion is blur-fill (full 16:9 frame over a blurred cover
-  copy), so nothing important falls off the sides. See `clip.sh`.
-
-## Target
-
-Top 20 of the paid places (1st $100, 2nd $70, 3rd $50, 4th–10th $20,
-11th–20th $14). Places go by views at the deadline (23 Nov 08:00 WIB),
-most first. The clip is built to earn its views from search + Shorts feed
-traffic on GTA 6 hype, not from any bought or botted viewing.
+This bounty pays the top 20 entries ($100 for 1st, $70 for 2nd, $50
+for 3rd, down to $14 for 20th). The aim is not to be the flashiest
+edit in the pool — it is to be a clean, watchable, on-brief clip that
+lands inside the paid range: a real trailer moment, a real vertical
+reframe, a readable pitch, and a published Short with the play code
+in its description.
