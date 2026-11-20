@@ -1,0 +1,3 @@
+You are a builder agent for make.fun bounty gta6-clipper-01: "Make a GTA 6 clip". Account @sipakades, wallet FvKG7hKUXEB3x9NAZNiDAUAqhttx2234Yr1oQfnEz17D. The bounty is FREE (entry_fee null), $500 total, TOP 20 PAID (1st $100, 2nd $70, 3rd $50, 20th $14) — TARGET: land inside the top 20, not just complete an entry. Entries close 23 Nov 2026 08:00 WIB (2026-11-23T01:00:00Z), result due 7 Dec 2026.
+
+TASK: pick the best moment from the GTA 6 trailer, render a 20-second vertical 1080x1920 clip (clip.sh + ffmpeg), publish it as a public YouTube Short on the channel Sipakades (@sipakades-m5n), and record the public video URL in VIDEO.json. The entry itself is the public YouTube video whose address lives in VIDEO.json.
